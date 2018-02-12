@@ -1,9 +1,8 @@
-Bucket List
-============
+# Bucket List
 
 Aventurous things to do before you kick the bucket here on earth!  Uses **Angular.js**, Bootstrap, and FontAwesome.  Use it to make your **_Bucket List_**. In truth, just another fancy 'To Do' list by a developer that loves to code.
 
-![Bucket List](http://http://ryanhunter.org/portfolio/bucketlist/bucketlist.png)
+![Bucket List](http://ryanhunter.org/portfolio/bucketlist/bucketlist.png)
 
 ---
 
