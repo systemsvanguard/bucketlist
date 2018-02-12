@@ -1,0 +1,88 @@
+/*   Bucket List  */
+body {
+  background-color: #0000ce; 
+  font-family: "lato", sans-serif;
+}
+
+.all {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.wrapper {
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 10px auto;
+  padding: 10px;
+  min-width: 500px;
+}
+
+.tiny {
+  font-weight: 200;
+}
+
+.tasks {
+  padding: 10px;
+}
+
+.task-single {
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+}
+
+.radio-color {
+  width: 25px;
+  height: 25px;
+  border-radius: 100px;
+  position: relative;
+  top: 20px;
+  float: left;
+  margin-right: 20px;
+  cursor: pointer;
+  display: block;
+}
+
+.fa {
+  position: relative;
+  top: 18px; 
+  font-size: 20px;
+  color: #0000ce;  /* deep blue */
+  cursor: pointer;
+  width: 25px;
+}
+
+.button-clear {
+  padding-top: 20px;  
+}
+
+.marked {
+  color: #ccc;
+}
+
+.color-gray {
+  background-color: #ccc;
+}
+
+.color-red {
+  background-color: #ce6700;
+}
+
+.color-blue {
+  background-color: #6700ce;
+}
+
+.color-green {
+  background-color: #67ce00;
+}
+
+.color-black {
+  background-color: #0000ce;
+}
+
+.text-white {
+  color: #ffffff; 
+}
+

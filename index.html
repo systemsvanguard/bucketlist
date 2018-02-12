@@ -1,0 +1,48 @@
+<!doctype html> 
+<html lang="en">
+<head>
+  <title>Bucket List</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="bucketlist/images/img/appicon.ico" /> 
+  <!-- CSS files -->
+  <link href="https://fonts.googleapis.com/css?family=Lato|Mukta+Malar" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">   
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="bucketlist/bucketlist.css" rel="stylesheet" type="text/css" />
+  
+  <!-- JS files -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
+  <script src="bucketlist/bucketlist.js"></script>
+</head>
+
+<body>
+<!------------------>
+
+<div ng-app="myApp" ng-controller="mainController">
+  <h1 class="text-center text-white">Bucket List</h1>
+  <div class="all">
+    <section class="wrapper">
+      <form ng-submit="submitTask()">
+        <input class="form-control" type="text" placeholder="Enter a bucket list goal ..." ng-model="currentTask.text"/>
+      </form>
+      <div class="tasks">
+        <div class="task-single" ng-repeat="task in Tasks">
+          <h5 class="tiny" ng-class="{'marked': task.marked}" ng-click="markTask(task)">{{task.text | capitalize }}</h5>
+          <div class="checkes">
+            <div class="radio-color color-{{task.color}}" ng-click="changeTaskColor(task)"></div><i class="fa" ng-click="markTask(task)" ng-class="{'fa-square-o': !task.marked, 'fa-check-square-o': task.marked}"></i>
+          </div>
+        </div>
+      </div>
+      <div class="button-clear">
+        <button class="btn btn-lg btn-primary" ng-click="clearTasks()"><span class="glyphicon glyphicon-trash"></span> Remove Completed Goals</button>
+      </div>
+    </section>
+  </div>
+</div>
+<!------------------>	
+</body>
+</html>
+
+
