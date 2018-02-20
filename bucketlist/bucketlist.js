@@ -19,13 +19,13 @@ app.controller("mainController", [
 			{ text: "Running with the bulls in Spain", marked: false, color: "blue" },
 			{ text: "Run the Toronto Marathon", marked: false, color: "blue" },
 			{ text: "Hang glide over Rio de Janeiro", marked: false, color: "red" },
-			{ text: "Parachute from a Plain", marked: true, color: "gray" },
+			{ text: "Parachute from a Plane", marked: true, color: "gray" },
 			{ text: "Go Para-sailing", marked: true, color: "gray" },
 			{ text: "Raft through the Grand Canyon", marked: false, color: "red" },
 			{ text: "Swim with dolphins in Jamaica", marked: false, color: "black" },
 			{ text: "Swim with whale sharks in the Maldives", marked: false, color: "green" },
 			{ text: "Party Carnival in Jamaica", marked: true, color: "gray" },
-			{ text: "Treetok Treking", marked: true, color: "gray" }
+			{ text: "Treetop Trekking", marked: true, color: "gray" }
 		];
 
 		self.submitTask = function() {
